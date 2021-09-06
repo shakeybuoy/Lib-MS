@@ -1,0 +1,110 @@
+﻿body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 28px;
+  font-size: 18px;
+  text-shadow: 0px 0px 1px #000;
+}
+.set-radius-zero {
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+}
+.content-wrapper {
+  padding: 80px 0;
+  min-height: 800px;
+  background: linear-gradient(#062b50, #032549);
+  margin-top: 0px;
+  text-align: center;
+}
+.header-line {
+  font-size: 50px;
+  text-shadow: 1px 1px 10px #000;
+  color: #c9c9c9;
+  font-weight: 900;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+}
+.pad-botm {
+  padding-bottom: 30px;
+}
+
+/* =============================================================
+   NAVBAR & MENU STYLES
+ ============================================================ */
+
+.right-div {
+  float: right;
+  padding: 20px;
+}
+#menu-top a {
+  color: #ffd60a;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 25px 15px 25px 15px;
+  text-transform: uppercase;
+}
+#menu-top a:hover {
+  color: #001d3d;
+  background-color: #ffd60a;
+}
+.menu-section {
+  background-color: #001d3d;
+  border-bottom: 2px solid #ffc300;
+  width: 100%;
+}
+.menu-top-active {
+  background-color: #001d3d;
+  /* text-decoration: underline solid #ffc300; */
+}
+.navbar-inverse {
+  background-color: #003566;
+  border-bottom: 2px solid #ffc300;
+}
+#ddlmenuItem {
+  color: #ffc300;
+  background-color: #001d3d;
+}
+.navbar {
+  min-height: 90px;
+  margin-bottom: 0px;
+}
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: transparent;
+}
+.navbar-toggle {
+  background-color: #001d3d;
+  border: 1px solid #fff;
+}
+
+/* =============================================================
+   DASHBOARD STYLES
+ ============================================================ */
+.back-widget-set {
+  font-size: 25px;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.329);
+  margin-bottom: 40px;
+  border: 2px solid rgba(0, 0, 0, 0.295);
+}
+.back-widget-set:hover {
+  box-shadow: 1px 1px 15px 10px #ffc4008c;
+}
+/* =============================================================
+   FOOTER SECTION STYLES
+ ============================================================ */
+.footer-section {
+  padding: 25px 50px 25px 50px;
+  color: #ffc300;
+  font-size: 18px;
+  background-color: #003566;
+  text-align: right;
+  border-top: 2px solid #ffc300;
+}
+
+.footer-section a,
+.footer-section a:hover {
+  color: #ffd60a;
+  font-size: 20px;
+  font-weight: 900;
+}
