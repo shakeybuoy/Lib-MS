@@ -2,7 +2,7 @@
     <div>
         <a class="navbar-brand">
 
-            <img src="assets/img/lbms.png" style="width:250px;" />
+            <img src="../assets/img/lbms.png" style="width:250px;" />
 
         </a>
         <div class="navbar-header">
@@ -20,7 +20,6 @@
         </div>
     </div>
 </div>
-<!-- LOGO HEADER END -->
 <section class="menu-section">
     <div class="container">
         <div class="row ">

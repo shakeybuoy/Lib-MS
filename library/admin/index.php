@@ -27,13 +27,9 @@ if (isset($_POST['login'])) {
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Admin Console</title>
-    <!-- BOOTSTRAP CORE STYLE  -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONT AWESOME STYLE  -->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!-- CUSTOM STYLE  -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- GOOGLE FONT -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
 </head>
@@ -79,14 +75,10 @@ if (isset($_POST['login'])) {
 
         </div>
     </div>
-    <!-- CONTENT-WRAPPER SECTION END-->
     <?php include('includes/footer.php'); ?>
-    <!-- FOOTER SECTION END-->
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
-    <script src="assets/js/bootstrap.js"></script>
-    <!-- CUSTOM SCRIPTS  -->
-    <script src="assets/js/custom.js"></script>
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/custom.js"></script>
 </body>
 
 </html>

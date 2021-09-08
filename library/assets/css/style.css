@@ -1,9 +1,12 @@
-﻿body {
+﻿body,
+html {
   font-family: "Open Sans", sans-serif;
   line-height: 28px;
   font-size: 18px;
   text-shadow: 0px 0px 1px #000;
+  overflow-x: hidden;
 }
+
 .set-radius-zero {
   border-radius: 0px;
   -moz-border-radius: 0px;
@@ -29,8 +32,8 @@
 }
 
 /* =============================================================
-     NAVBAR & MENU STYLES
-   ============================================================ */
+   NAVBAR & MENU STYLES
+ ============================================================ */
 
 .right-div {
   float: right;
@@ -78,12 +81,12 @@
 }
 
 /* =============================================================
-     DASHBOARD STYLES
-   ============================================================ */
+   DASHBOARD STYLES
+ ============================================================ */
 .back-widget-set {
   font-size: 25px;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.329);
+  background-color: rgba(0, 0, 0, 0);
   margin-bottom: 40px;
   border: 2px solid rgba(0, 0, 0, 0.295);
 }
@@ -91,8 +94,8 @@
   box-shadow: 1px 1px 15px 10px #ffc4008c;
 }
 /* =============================================================
-     FOOTER SECTION STYLES
-   ============================================================ */
+   FOOTER SECTION STYLES
+ ============================================================ */
 .footer-section {
   padding: 25px 50px 25px 50px;
   color: #ffc300;
@@ -108,7 +111,16 @@
   font-size: 20px;
   font-weight: 900;
 }
-/* 
-.form-group {
-  background-color:;
-} */
+
+.alert-warning {
+  color: #ebac3f;
+}
+.alert-info {
+  color: #4dbef6;
+}
+.alert-danger {
+  color: #ff211c;
+}
+.alert-success {
+  color: #23d226;
+}

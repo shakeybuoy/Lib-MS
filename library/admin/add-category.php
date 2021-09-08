@@ -24,57 +24,51 @@ if (strlen($_SESSION['alogin']) == 0) {
         }
     }
 ?>
-    <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Online Library Management System | Add Categories</title>
-        <!-- BOOTSTRAP CORE STYLE  -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet" />
-        <!-- FONT AWESOME STYLE  -->
-        <link href="assets/css/font-awesome.css" rel="stylesheet" />
-        <!-- CUSTOM STYLE  -->
-        <link href="assets/css/style.css" rel="stylesheet" />
-        <!-- GOOGLE FONT -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Add Categories</title>
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
-    </head>
+</head>
 
-    <body>
-        <!------MENU SECTION START-->
-        <?php include('includes/header.php'); ?>
-        <!-- MENU SECTION END-->
-        <div class=" content-wrapper">
+<body>
+    <?php include('includes/header.php'); ?>
+    <div class=" content-wrapper">
 
-            <div class="container">
-                <div class="row pad-botm">
-                    <div class="col-md-12">
-                        <h4 class="header-line">Add category</h4>
-
-                    </div>
+        <div class="container">
+            <div class="row pad-botm">
+                <div class="col-md-12">
+                    <h4 class="header-line">Add Category</h4>
 
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
-<div class=" panel panel-info">
-                        <div class="panel-heading">
-                            Category Info
-                        </div>
-                        <div class="panel-body">
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                    <div class=" panel panel-info">
+
+                        <div style="padding:30px; text-align:left; " class="panel-body">
                             <form role="form" method="post">
                                 <div class="form-group">
                                     <label>Category Name</label>
-                                    <input class="form-control" type="text" name="category" autocomplete="off" required />
+                                    <input class="form-control" type="text" name="category" autocomplete="off"
+                                        required />
                                 </div>
                                 <div class="form-group">
                                     <label>Status</label>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="status" id="status" value="1" checked="checked">Active
+                                            <input type="radio" name="status" id="status" value="1"
+                                                checked="checked">Active
                                         </label>
                                     </div>
                                     <div class="radio">
@@ -84,8 +78,9 @@ if (strlen($_SESSION['alogin']) == 0) {
                                     </div>
 
                                 </div>
-                                <button type="submit" name="create" class="btn btn-info">Create </button>
-
+                                <div style="text-align: center;">
+                                    <button type="submit" name="create" class="btn btn-info">Create </button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -94,18 +89,12 @@ if (strlen($_SESSION['alogin']) == 0) {
             </div>
 
         </div>
-        </div>
-        <!-- CONTENT-WRAPPER SECTION END-->
-        <?php include('includes/footer.php'); ?>
-        <!-- FOOTER SECTION END-->
-        <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-        <!-- CORE JQUERY  -->
-        <script src="assets/js/jquery-1.10.2.js"></script>
-        <!-- BOOTSTRAP SCRIPTS  -->
-        <script src="assets/js/bootstrap.js"></script>
-        <!-- CUSTOM SCRIPTS  -->
-        <script src="assets/js/custom.js"></script>
-    </body>
+    </div>
+    <?php include('includes/footer.php'); ?>
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    <script src="../assets/js/bootstrap.js"></script>
+    <script src="../assets/js/custom.js"></script>
+</body>
 
-    </html>
+</html>
 <?php } ?>

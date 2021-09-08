@@ -1,5 +1,4 @@
 <div class="navbar navbar-inverse set-radius-zero">
-    <!-- <div class="container"> -->
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
@@ -17,9 +16,7 @@
         <a href="logout.php" class="btn btn-danger pull-right">LOG ME OUT</a>
     </div>
     <?php } ?>
-    <!-- </div> -->
 </div>
-<!-- LOGO HEADER END-->
 <?php if ($_SESSION['login']) {
 ?>
 <section class="menu-section">

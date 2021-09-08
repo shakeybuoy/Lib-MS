@@ -11,7 +11,7 @@ if (isset($_POST['signup'])) {
     fputs($fp, "$hits[0]");
     fclose($fp);
     $StudentId = $hits[0];
-    $fname = $_POST['fullanme'];
+    $fname = $_POST['fullname'];
     $mobileno = $_POST['mobileno'];
     $email = $_POST['email'];
     $password = md5($_POST['password']);
@@ -82,29 +82,23 @@ if (isset($_POST['signup'])) {
 </head>
 
 <body>
-    <!------MENU SECTION START-->
     <?php include('includes/header.php'); ?>
-    <!-- MENU SECTION END-->
     <div class="content-wrapper">
         <div class="container">
-            <div class="row pad-botm">
-                <div class="col-md-12">
-                    <h4 class="header-line">User Signup</h4>
-
-                </div>
-
-            </div>
+            <br>
             <div class="row" style="margin:0 auto;">
 
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-8 col-md-offset-2">
                     <div class="panel panel-info">
-                        <div class="panel-heading">
-                            SIGN UP
+                        <div class="panel-heading" style="border-bottom: 5px solid black">
+
+                            <h3 style="font-size:35px; color:#000; ">Sign Up</h3>
                         </div>
-                        <div class="panel-body">
+                        <div style="padding:30px; text-align:left;" class="panel-body">
+
                             <form name="signup" method="post" onSubmit="return valid();">
                                 <div class="form-group">
-                                    <label>Enter Full Name</label>
+                                    <label>Full Name</label>
                                     <input class="form-control" type="text" name="fullname" autocomplete="off"
                                         required />
                                 </div>
@@ -117,14 +111,14 @@ if (isset($_POST['signup'])) {
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Enter Email</label>
+                                    <label>Email Address</label>
                                     <input class="form-control" type="email" name="email" id="emailid"
                                         onBlur="checkAvailability()" autocomplete="off" required />
                                     <span id="user-availability-status" style="font-size:12px;"></span>
                                 </div>
 
                                 <div class="form-group">
-                                    <label>Enter Password</label>
+                                    <label>Password</label>
                                     <input class="form-control" type="password" name="password" autocomplete="off"
                                         required />
                                 </div>
@@ -134,14 +128,10 @@ if (isset($_POST['signup'])) {
                                     <input class="form-control" type="password" name="confirmpassword"
                                         autocomplete="off" required />
                                 </div>
-                                <!-- <div class="form-group">
-                                    <label>Verification code : </label>
-                                    <input type="text" name="vercode" maxlength="5" autocomplete="off" required
-                                        style="width: 150px; height: 25px;" />&nbsp;<img src="captcha.php">
-                                </div> -->
-                                <button type="submit" name="signup" class="btn btn-danger" id="submit">Register Now
-                                </button>
-
+                                <div style="margin-top: 20px; text-align: center;">
+                                    <button type="submit" name="signup" class="btn btn-primary" id="submit">Register Now
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -149,12 +139,12 @@ if (isset($_POST['signup'])) {
             </div>
         </div>
     </div>
-    <!-- CONTENT-WRAPPER SECTION END-->
+
     <?php include('includes/footer.php'); ?>
+
+
     <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
     <script src="assets/js/bootstrap.js"></script>
-    <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
 </body>
 

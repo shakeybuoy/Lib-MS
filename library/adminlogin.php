@@ -14,12 +14,8 @@ if (isset($_POST['login'])) {
     $query->bindParam(':password', $password, PDO::PARAM_STR);
     $query->execute();
     $results = $query->fetchAll(PDO::FETCH_OBJ);
-    // if ($query->rowCount() > 0) {
     $_SESSION['alogin'] = $_POST['username'];
     echo "<script type='text/javascript'> document.location ='admin/dashboard.php'; </script>";
-    // } else {
-    //     echo "<script>alert('Invalid Details');</script>";
-    // }
 }
 ?>
 <!DOCTYPE html>
@@ -31,41 +27,31 @@ if (isset($_POST['login'])) {
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Admin Login</title>
-    <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONT AWESOME STYLE  -->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!-- CUSTOM STYLE  -->
     <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
 </head>
 
 <body>
-    <!------MENU SECTION START-->
     <?php include('includes/header.php'); ?>
-    <!-- MENU SECTION END-->
+
     <div class="content-wrapper">
         <div class="container">
-            <div class="row pad-botm">
-                <div class="col-md-12">
-                    <h4 class="header-line">ADMIN LOGIN FORM</h4>
-                </div>
-            </div>
+            <br>
 
-            <!--LOGIN PANEL START-->
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
                     <div class="panel panel-info">
-                        <div class="panel-heading">
-                            LOGIN FORM
+                        <div class="panel-heading" style="border-bottom: 5px solid black">
+                            <h3 style="font-size:35px; color:#000; ">Admin Login</h3>
                         </div>
-                        <div class="panel-body">
+                        <div style="padding:30px; text-align:left;" class="panel-body">
                             <form role="form" method="post">
 
                                 <div class="form-group">
-                                    <label>Enter Username</label>
+                                    <label>Username</label>
                                     <input class="form-control" type="text" name="username" autocomplete="off"
                                         required />
                                 </div>
@@ -74,29 +60,24 @@ if (isset($_POST['login'])) {
                                     <input class="form-control" type="password" name="password" autocomplete="off"
                                         required />
                                 </div>
-                                <!-- <div class="form-group">
-                                    <label>Verification code : </label>
-                                    <input type="text" name="vercode" maxlength="5" autocomplete="off" required style="width: 150px; height: 25px;" />&nbsp;<img src="captcha.php">
-                                </div> -->
-
-                                <button type="submit" name="login" class="btn btn-info">LOGIN </button>
+                                <div style="margin-top:20px; text-align:center;">
+                                    <button type="submit" style="margin-top: 10px;" name="login"
+                                        class="btn btn-primary">Login </button>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!---LOGIN PANEL END-->
 
 
         </div>
     </div>
-    <!-- CONTENT-WRAPPER SECTION END-->
+
     <?php include('includes/footer.php'); ?>
-    <!-- FOOTER SECTION END-->
+
     <script src="assets/js/jquery-1.10.2.js"></script>
-    <!-- BOOTSTRAP SCRIPTS  -->
     <script src="assets/js/bootstrap.js"></script>
-    <!-- CUSTOM SCRIPTS  -->
     <script src="assets/js/custom.js"></script>
     </script>
 </body>
