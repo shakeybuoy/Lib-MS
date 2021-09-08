@@ -1,9 +1,9 @@
 -----------------------------------------------------------------------------
 Database Configuration
 
-1.Open http://localhost/phpmyadmin
-2.Create Database library
-3.Import database library.sql (available inside zip package)
+Open http://localhost/phpmyadmin
+Create Database library
+Import database library.sql (available inside zip package)
 -----------------------------------------------------------------------------
 For User 
 
